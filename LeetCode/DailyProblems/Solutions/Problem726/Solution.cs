@@ -103,18 +103,6 @@ public class Solution
         count = string.Empty;
     }
 
-    private static string ParseAtomDict(SortedDictionary<string, int> atomDict)
-    {
-        var result = string.Empty;
-
-        foreach (var (atom, count) in atomDict)
-        {
-            result += $"{atom}{(count > 1 ? count : string.Empty)}";
-        }
-
-        return result;
-    }
-
     private static string ConvertAtomFormulaWithoutParentheses(string formula, int multiplier = 1)
     {
         var atomDict = CountOnFormulaWithoutParentheses(formula, multiplier);
