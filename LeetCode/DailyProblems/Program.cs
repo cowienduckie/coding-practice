@@ -4,27 +4,31 @@ internal static class Program
 {
     internal static void Main(string[] _)
     {
-        var solution = new Solutions.Problem1110.Solution();
+        var solution = new Solutions.Problem2392.Solution();
 
-        var root = new Solutions.Problem1110.TreeNode(1)
+        var rowConditions = new[]
         {
-            left = new Solutions.Problem1110.TreeNode(2)
-            {
-                left = new Solutions.Problem1110.TreeNode(4),
-                right = new Solutions.Problem1110.TreeNode(5)
-            },
-            right = new Solutions.Problem1110.TreeNode(3)
-            {
-                left = new Solutions.Problem1110.TreeNode(6),
-                right = new Solutions.Problem1110.TreeNode(7)
-            }
+            new[] { 1, 2 },
+            new[] { 2, 3 },
+            new[] { 3, 1 },
+            new[] { 2, 3 }
         };
 
-        var ans = solution.DelNodes(root, new []{ 3, 5 });
-
-        foreach (var node in ans)
+        var colConditions = new[]
         {
-            Console.WriteLine(node.val);
+            new[] { 2, 1 }
+        };
+
+        var ans = solution.BuildMatrix(3, rowConditions, colConditions);
+
+        foreach (var row in ans)
+        {
+            foreach (var cell in row)
+            {
+                Console.Write(cell + " ");
+            }
+
+            Console.WriteLine();
         }
     }
 }
