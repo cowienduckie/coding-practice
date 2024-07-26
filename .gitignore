@@ -1,7 +1,15 @@
+# Build and Debug directories 
 bin/
 obj/
-/packages/
+
+# JetBrains IDEs
+.idea/
 riderModule.iml
 /_ReSharper.Caches/
-.idea/
-.idea
+/packages/
+
+# VS Code
+.vscode/
+
+# MacOS miscellaneous
+.DS_Store
