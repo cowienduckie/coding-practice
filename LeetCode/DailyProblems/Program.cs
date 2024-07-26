@@ -4,13 +4,20 @@ internal static class Program
 {
     internal static void Main(string[] _)
     {
-        var solution = new Solutions.Problem2191.Solution();
+        var solution = new Solutions.Problem1334.SolutionFloydWarshall();
 
-        var ans = solution.SortJumbled(new []{ 5,6,8,7,4,0,3,1,9,2 }, new []{ 7686,97012948,84234023,2212638,99 });
-
-        foreach (var num in ans)
+        var edges = new[]
         {
-            Console.Write(num + " ");
-        }
+            new[] { 0, 1, 10 },
+            new[] { 0, 2, 1 },
+            new[] { 2, 3, 1 },
+            new[] { 1, 3, 1 },
+            new[] { 1, 4, 1 },
+            new[] { 4, 5, 10 }
+        };
+
+        var ans = solution.FindTheCity(6, edges, 20);
+
+        Console.WriteLine(ans);
     }
 }
