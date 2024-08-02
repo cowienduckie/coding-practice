@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LeetCode", "LeetCode", "{44AE1D6E-B3C4-4FE5-9D15-8C6DD0075464}"
@@ -60,6 +60,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemB", "Codeforces\Contests\Round962\ProblemB\ProblemB.csproj", "{7CCD44C5-EB26-405A-8BA9-D731C3639ADC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemC", "Codeforces\Contests\Round962\ProblemC\ProblemC.csproj", "{7096810D-ACC6-40F8-91A3-8F7E8F017F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringProblems", "LeetCode\TechInterviewPrep\StringProblems\StringProblems.csproj", "{88868BBA-309E-4E6A-ABBB-DEE325B72B4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{7096810D-ACC6-40F8-91A3-8F7E8F017F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7096810D-ACC6-40F8-91A3-8F7E8F017F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7096810D-ACC6-40F8-91A3-8F7E8F017F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88868BBA-309E-4E6A-ABBB-DEE325B72B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88868BBA-309E-4E6A-ABBB-DEE325B72B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88868BBA-309E-4E6A-ABBB-DEE325B72B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88868BBA-309E-4E6A-ABBB-DEE325B72B4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -179,5 +185,6 @@ Global
 		{42CFFF29-FDB9-45D6-B9E7-0BAA2AD56FF7} = {6BDECA6D-C2BB-48F0-916C-58E8B5580080}
 		{7CCD44C5-EB26-405A-8BA9-D731C3639ADC} = {6BDECA6D-C2BB-48F0-916C-58E8B5580080}
 		{7096810D-ACC6-40F8-91A3-8F7E8F017F5B} = {6BDECA6D-C2BB-48F0-916C-58E8B5580080}
+		{88868BBA-309E-4E6A-ABBB-DEE325B72B4D} = {99C56426-D78E-40B0-BF8E-19913FE310E7}
 	EndGlobalSection
 EndGlobal
