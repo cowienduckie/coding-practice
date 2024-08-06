@@ -4,9 +4,9 @@ internal static class Program
 {
     internal static void Main(string[] _)
     {
-        var solution = new Solutions.Problem1653.Solution();
+        var solution = new Solutions.Problem3016.Solution();
 
-        var ans = solution.MinimumDeletions("aabbaababbababaabbbaabbbbaababababbabbbababbabbaabaaabbbbbbaaabbbbabaababbaaabbbbaaabababbbaaa");
+        var ans = solution.MinimumPushes("aabbccccde");
 
         Console.WriteLine(ans);
     }
