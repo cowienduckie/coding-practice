@@ -88,30 +88,3 @@ class Solution:
             self.dfs(grid, island, curr_island, row - 1, col, total_rows, total_cols)
             self.dfs(grid, island, curr_island, row, col + 1, total_rows, total_cols)
             self.dfs(grid, island, curr_island, row, col - 1, total_rows, total_cols)
-
-
-grid1 = [
-    [1, 1, 1, 1, 0, 0],
-    [1, 1, 0, 1, 0, 0],
-    [1, 0, 0, 1, 1, 1],
-    [1, 1, 1, 0, 0, 1],
-    [1, 1, 1, 1, 1, 0],
-    [1, 0, 1, 0, 1, 0],
-    [0, 1, 1, 1, 0, 1],
-    [1, 0, 0, 0, 1, 1],
-    [1, 0, 0, 0, 1, 0],
-    [1, 1, 1, 1, 1, 0],
-]
-grid2 = [
-    [1, 1, 1, 1, 0, 1],
-    [0, 0, 1, 0, 1, 0],
-    [1, 1, 1, 1, 1, 1],
-    [0, 1, 1, 1, 1, 1],
-    [1, 1, 1, 0, 1, 0],
-    [0, 1, 1, 1, 1, 1],
-    [1, 1, 0, 1, 1, 1],
-    [1, 0, 0, 1, 0, 1],
-    [1, 1, 1, 1, 1, 1],
-    [1, 0, 0, 1, 0, 0],
-]
-print(Solution().countSubIslands(grid1, grid2))  # 3
